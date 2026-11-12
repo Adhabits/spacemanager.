@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interior Designers in Dehradun | 3D Design + Turnkey Execution | Space Manager</title>
+<meta name="description" content="Space Manager designs and executes home interiors, villa elevations and offices in Dehradun. See your space in photorealistic 3D before work begins. Book a design consultation.">
+<meta property="og:title" content="See your home before it's built | Space Manager, Dehradun">
+<meta property="og:description" content="Interior design, elevations and turnkey execution — planned in 3D, delivered by one coordinated team.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1f1a17">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preload" as="image" href="img/living-1.webp" media="(min-width: 721px)">
+<link rel="preload" as="image" href="img/living-1-sm.webp" media="(max-width: 720px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+:root{
+  --bg:#f7f2eb; --bg-2:#efe6da; --card:#fffdf9; --ink:#1f1a17; --ink-2:#4d443d; --muted:#7a6e64;
+  --line:#e2d6c7; --copper:#b0643a; --copper-d:#8c4a27; --copper-l:#d79b6f; --gold:#c8a27c;
+  --dark:#1f1a17; --dark-2:#2b2420; --ok:#2f7a4f; --err:#b3261e;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,-apple-system,Segoe UI,sans-serif;
+  --r:14px; --shadow:0 18px 50px -20px rgba(31,26,23,.35);
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;font-weight:400;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+h3{font-size:1.55rem}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--copper)}
+.section{padding:clamp(64px,9vw,110px) 0}
+.section-head{max-width:720px;margin-bottom:44px}
+.section-head p{color:var(--ink-2);margin-top:16px;font-size:1.06rem}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--sans);font-weight:500;font-size:1rem;letter-spacing:.02em;border:0;border-radius:999px;padding:15px 28px;cursor:pointer;text-decoration:none;transition:transform .15s ease,background .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:linear-gradient(135deg,var(--copper) 0%,var(--copper-d) 100%);color:#fff;box-shadow:0 10px 24px -10px rgba(140,74,39,.7)}
+.btn-primary:hover{box-shadow:0 14px 30px -10px rgba(140,74,39,.85)}
+.btn-ghost{background:transparent;color:inherit;border:1px solid currentColor}
+.btn-wa{background:#1f8f4e;color:#fff}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* Header */
+.top{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s ease,box-shadow .25s ease}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px}
+.top.scrolled{background:rgba(247,242,235,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.logo{display:flex;align-items:center}
+.logo img{height:46px;width:auto}
+.logo .on-dark{filter:brightness(0) invert(1) sepia(.25) saturate(1.4)}
+.top.scrolled .logo .on-dark{filter:none}
+.top-actions{display:flex;align-items:center;gap:18px}
+.top-phone{color:#fff;text-decoration:none;font-weight:500;font-size:.98rem;display:flex;align-items:center;gap:8px}
+.top.scrolled .top-phone{color:var(--ink)}
+.top .btn{padding:11px 20px;font-size:.92rem}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;color:#fff;padding:110px 0 60px;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:#2b2420 center/cover no-repeat;background-image:url(img/living-1-sm.webp)}
+@media(min-width:721px){.hero-bg{background-image:url(img/living-1.webp)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(24,19,16,.92) 0%,rgba(24,19,16,.78) 42%,rgba(24,19,16,.35) 75%,rgba(24,19,16,.25) 100%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero .eyebrow{color:var(--copper-l)}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5rem);margin:18px 0 22px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--copper-l);font-weight:500}
+.hero-sub{font-size:clamp(1.05rem,1.6vw,1.22rem);color:rgba(255,255,255,.86);max-width:560px;font-weight:300}
+.ticks{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;color:rgba(255,255,255,.92)}
+.ticks svg{flex:none;width:22px;height:22px;margin-top:2px;color:var(--copper-l)}
+.hero-ctas{display:none;gap:12px;margin-top:30px;flex-wrap:wrap}
+
+/* Form card */
+.form-card{background:var(--card);color:var(--ink);border-radius:20px;padding:30px 28px 26px;box-shadow:var(--shadow);position:relative}
+.form-card h2{font-size:1.9rem}
+.form-card .form-intro{color:var(--muted);font-size:.95rem;margin:8px 0 20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.82rem;font-weight:500;letter-spacing:.04em;color:var(--ink-2);margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 14px;transition:border-color .15s,box-shadow .15s;appearance:none;-webkit-appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%237a6e64' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--copper);box-shadow:0 0 0 3px rgba(176,100,58,.15)}
+.field.invalid input,.field.invalid select{border-color:var(--err)}
+.field .err{display:none;color:var(--err);font-size:.8rem;margin-top:5px}
+.field.invalid .err{display:block}
+.phone-wrap{display:flex}
+.phone-wrap span{display:flex;align-items:center;padding:0 12px;border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;background:var(--bg);color:var(--ink-2);font-size:.95rem}
+.phone-wrap input{border-radius:0 10px 10px 0}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-card .btn{width:100%;margin-top:6px;padding:16px}
+.form-note{font-size:.8rem;color:var(--muted);text-align:center;margin-top:12px;line-height:1.45}
+.form-note svg{width:13px;height:13px;vertical-align:-2px;margin-right:4px}
+.hp{position:absolute!important;left:-9999px!important;opacity:0;height:0;width:0}
+.btn[disabled]{opacity:.7;cursor:progress}
+
+/* Trust strip */
+.strip{background:var(--dark);color:#efe6da}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:26px 18px;text-align:center;border-left:1px solid rgba(255,255,255,.08)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:var(--serif);font-size:1.9rem;font-weight:600;color:var(--copper-l);line-height:1.1}
+.stat span{font-size:.86rem;letter-spacing:.06em;color:rgba(239,230,218,.75)}
+
+/* Problem */
+.problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.problem p.lead{font-size:1.12rem;color:var(--ink-2);margin-top:20px}
+.pains{display:grid;gap:14px;margin-top:30px}
+.pain{display:flex;gap:16px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:var(--r)}
+.pain .x{flex:none;width:34px;height:34px;border-radius:50%;background:#f4e3d8;color:var(--copper-d);display:grid;place-items:center;font-weight:600}
+.pain b{display:block;font-weight:500}
+.pain span{color:var(--muted);font-size:.95rem}
+.answer{margin-top:26px;padding:20px 22px;border-left:3px solid var(--copper);background:var(--bg-2);border-radius:0 var(--r) var(--r) 0;font-size:1.06rem}
+.answer strong{color:var(--copper-d);font-weight:600}
+.problem-img{position:relative}
+.problem-img img{border-radius:20px;box-shadow:var(--shadow);aspect-ratio:4/5;object-fit:cover;width:100%}
+.problem-img .tag{position:absolute;left:-18px;bottom:28px;background:var(--card);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow);font-size:.9rem;max-width:230px}
+.problem-img .tag b{display:block;font-family:var(--serif);font-size:1.25rem;color:var(--copper-d)}
+
+/* Services */
+.services{background:var(--bg-2)}
+.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.svc{background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.svc:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.svc img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.svc-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.svc h3{margin-bottom:10px}
+.svc p{color:var(--ink-2);font-size:.97rem;flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.chips span{font-size:.75rem;letter-spacing:.04em;padding:4px 10px;border-radius:999px;background:var(--bg);color:var(--ink-2);border:1px solid var(--line)}
+.also{margin-top:26px;text-align:center;color:var(--ink-2)}
+.also a{color:var(--copper-d);font-weight:500}
+
+/* Gallery */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tab{font:inherit;font-size:.92rem;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink-2);cursor:pointer;transition:all .15s}
+.tab:hover{border-color:var(--copper)}
+.tab[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery button{all:unset;cursor:zoom-in;display:block;border-radius:12px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--bg-2)}
+.gallery button:focus-visible{outline:3px solid var(--copper);outline-offset:2px}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery button.wide{grid-column:span 2;aspect-ratio:auto}
+.gallery .cap{position:absolute;left:10px;bottom:10px;font-size:.75rem;letter-spacing:.06em;background:rgba(31,26,23,.72);color:#fff;padding:4px 10px;border-radius:999px}
+.g-note{font-size:.85rem;color:var(--muted);margin-top:16px}
+.mid-cta{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--dark);color:#fff;border-radius:20px;padding:28px 32px}
+.mid-cta p{font-family:var(--serif);font-size:1.7rem;line-height:1.2}
+.mid-cta p span{color:var(--copper-l);font-style:italic}
+
+/* 3D section */
+.viz{background:var(--dark);color:#efe6da;overflow:hidden}
+.viz-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.viz .eyebrow{color:var(--copper-l)}
+.viz h2{color:#fff}
+.viz .section-head p{color:rgba(239,230,218,.78)}
+.viz-list{display:grid;gap:22px;margin-top:8px}
+.viz-item{display:flex;gap:16px}
+.viz-item .n{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid rgba(215,155,111,.5);display:grid;place-items:center;font-family:var(--serif);font-size:1.25rem;color:var(--copper-l)}
+.viz-item b{color:#fff;font-weight:500;display:block;margin-bottom:2px}
+.viz-item span{color:rgba(239,230,218,.72);font-size:.97rem}
+.viz-stack{position:relative;height:520px}
+.viz-stack img{position:absolute;border-radius:16px;box-shadow:0 30px 60px -25px rgba(0,0,0,.7);object-fit:cover}
+.viz-stack img:nth-child(1){width:78%;height:62%;top:0;right:0}
+.viz-stack img:nth-child(2){width:62%;height:50%;bottom:0;left:0;border:6px solid var(--dark)}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:s;position:relative}
+.step{position:relative;padding-top:64px}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;top:0;left:0;font-family:var(--serif);font-size:2.6rem;font-weight:600;color:var(--copper);line-height:1}
+.step::after{content:"";position:absolute;top:22px;left:64px;right:-8px;height:1px;background:var(--line)}
+.step:last-child::after{display:none}
+.step h3{font-size:1.35rem;margin-bottom:8px}
+.step p{color:var(--ink-2);font-size:.95rem}
+
+/* Clients */
+.clients{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:54px 0}
+.clients .eyebrow{display:block;text-align:center;margin-bottom:28px;color:var(--muted)}
+.logos{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:26px 46px}
+.logos img{height:58px;width:auto;max-width:170px;object-fit:contain;filter:grayscale(1);opacity:.75;transition:all .2s}
+.logos img:hover{filter:none;opacity:1}
+
+/* Compare */
+.compare{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.compare th,.compare td{padding:18px 22px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:.98rem}
+.compare tr:last-child td{border-bottom:0}
+.compare thead th{font-family:var(--sans);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;color:var(--muted);background:var(--bg)}
+.compare thead th.us{background:var(--dark);color:var(--copper-l)}
+.compare td:first-child{font-weight:500;width:24%}
+.compare td.them{color:var(--muted)}
+.compare td.us{background:#fbf3ec;color:var(--ink)}
+.compare td.us::before{content:"✓ ";color:var(--copper);font-weight:600}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+details{border-bottom:1px solid var(--line);padding:4px 0}
+summary{list-style:none;cursor:pointer;padding:18px 40px 18px 0;font-weight:500;font-size:1.08rem;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:1.6px solid var(--copper);border-bottom:1.6px solid var(--copper);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details p{padding:0 0 20px;color:var(--ink-2)}
+.faq-side p{color:var(--ink-2);margin:16px 0 24px}
+
+/* Final CTA */
+.final{position:relative;color:#fff;isolation:isolate}
+.final-bg{position:absolute;inset:0;z-index:-2;background:#2b2420 url(img/elev-1-sm.webp) center/cover no-repeat}
+@media(min-width:721px){.final-bg{background-image:url(img/elev-1.webp)}}
+.final::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(24,19,16,.94) 0%,rgba(24,19,16,.82) 50%,rgba(24,19,16,.6) 100%)}
+.final-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.final h2{color:#fff;font-size:clamp(2.2rem,4.8vw,3.6rem)}
+.final .eyebrow{color:var(--copper-l)}
+.final-copy p{color:rgba(255,255,255,.82);margin-top:18px;font-size:1.1rem;font-weight:300;max-width:500px}
+.contact-lines{margin-top:30px;display:grid;gap:12px}
+.contact-lines a{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font-size:1.05rem}
+.contact-lines svg{width:20px;height:20px;color:var(--copper-l)}
+
+/* Success */
+.success{display:none;text-align:center;padding:16px 4px}
+.success .tick{width:62px;height:62px;border-radius:50%;background:#e7f3ec;color:var(--ok);display:grid;place-items:center;margin:0 auto 16px}
+.success h3{font-size:1.9rem;margin-bottom:8px}
+.success p{color:var(--ink-2);margin-bottom:20px}
+.form-card.done form{display:none}
+.form-card.done .success{display:block}
+.form-card.done > h2,.form-card.done > .form-intro{display:none}
+
+/* Footer */
+footer{background:#171310;color:rgba(239,230,218,.7);padding:56px 0 110px;font-size:.93rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.foot img{height:64px;width:auto;margin-bottom:14px;filter:brightness(0) invert(1) sepia(.3) saturate(1.3);opacity:.9}
+.foot h4{font-family:var(--sans);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--copper-l);margin:0 0 14px;font-weight:500}
+.foot a{text-decoration:none;display:block;margin-bottom:8px}
+.foot a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:20px;font-size:.8rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* Floating / sticky actions */
+.fab-wa{position:fixed;right:22px;bottom:22px;z-index:60;width:58px;height:58px;border-radius:50%;background:#1f8f4e;color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(0,0,0,.45);transition:transform .2s}
+.fab-wa:hover{transform:scale(1.06)}
+.fab-wa svg{width:30px;height:30px}
+.mbar{display:none}
+
+/* Lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1200px,94vw);max-height:92vh;overflow:visible}
+dialog.lb::backdrop{background:rgba(15,12,10,.92)}
+dialog.lb img{max-height:84vh;width:auto;max-width:100%;border-radius:10px;margin:0 auto}
+.lb-cap{color:#efe6da;text-align:center;margin-top:12px;font-size:.92rem}
+.lb-btn{position:fixed;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.12);color:#fff;border:0;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:1.5rem;display:grid;place-items:center}
+.lb-btn:hover{background:rgba(255,255,255,.25)}
+.lb-prev{left:18px}.lb-next{right:18px}
+.lb-close{top:22px;right:18px;transform:none}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media(max-width:1080px){
+  .svc-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(3,1fr);row-gap:36px}
+  .step:nth-child(3)::after{display:none}
+}
+@media(max-width:900px){
+  .hero{min-height:auto;padding:100px 0 40px}
+  .hero-grid,.problem-grid,.viz-grid,.final-grid,.faq-grid{grid-template-columns:1fr;gap:40px}
+  .hero-ctas{display:flex}
+  .viz-stack{height:380px}
+  .problem-img{order:-1}
+  .problem-img img{aspect-ratio:16/11}
+  .problem-img .tag{left:12px;bottom:12px}
+  .strip .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.08)}
+  .foot{grid-template-columns:1fr 1fr}
+  .foot>div:first-child{grid-column:1/-1}
+}
+@media(max-width:720px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .top .wrap{height:64px}
+  .logo img{height:38px}
+  .top-phone span,.top .btn{display:none}
+  .top-phone{width:42px;height:42px;border-radius:50%;justify-content:center;background:rgba(255,255,255,.14)}
+  .top.scrolled .top-phone{background:var(--bg-2)}
+  .hero h1{font-size:2.65rem}
+  .hero-ctas .btn{flex:1}
+  .form-card{padding:24px 18px 20px;border-radius:16px}
+  .row2{grid-template-columns:1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gallery button.wide{grid-column:span 2}
+  .gallery .cap{display:none}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;margin:0 -16px 20px;padding:0 16px 4px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none}
+  .steps{grid-template-columns:1fr;row-gap:0}
+  .step{padding:0 0 28px 64px;padding-top:0}
+  .step::before{font-size:2rem}
+  .step::after{display:block!important;left:20px;top:44px;bottom:8px;right:auto;width:1px;height:auto}
+  .step:last-child::after{display:none!important}
+  .mid-cta{padding:24px 20px}
+  .mid-cta p{font-size:1.45rem}
+  .mid-cta .btn{width:100%}
+  .compare thead{display:none}
+  .compare,.compare tbody,.compare tr,.compare td{display:block;width:100%!important}
+  .compare tr{border-bottom:1px solid var(--line);padding:14px 16px}
+  .compare tr:last-child{border-bottom:0}
+  .compare td{border:0;padding:4px 0}
+  .compare td:first-child{font-family:var(--serif);font-size:1.25rem;font-weight:600}
+  .compare td.them::before{content:"Usual way: ";font-weight:500;color:var(--muted)}
+  .compare td.us{background:transparent}
+  .compare td.us::before{content:"✓ Space Manager: "}
+  .logos{gap:22px 30px}
+  .logos img{height:44px;max-width:120px}
+  .foot{grid-template-columns:1fr}
+  .viz-stack{height:300px}
+  .fab-wa{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.5fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--card);border-top:1px solid var(--line);box-shadow:0 -8px 24px -12px rgba(0,0,0,.25);padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;transform:translateY(110%);transition:transform .25s ease}
+  .mbar.show{transform:none}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-weight:500;font-size:.92rem;border-radius:12px;padding:12px 6px}
+  .mbar svg{width:18px;height:18px}
+  .mbar .m-call{background:var(--bg-2);color:var(--ink)}
+  .mbar .m-wa{background:#1f8f4e;color:#fff}
+  .mbar .m-cta{background:linear-gradient(135deg,var(--copper),var(--copper-d));color:#fff}
+  .lb-btn{width:42px;height:42px;top:auto;bottom:18px;transform:none}
+  .lb-close{top:14px;bottom:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG sprites -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor" opacity=".18"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z" fill="currentColor"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.13c-.25.69-1.44 1.32-1.98 1.37-.51.05-.99.24-3.33-.69-2.82-1.11-4.6-4-4.74-4.18-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.25-.28.55-.35.74-.35l.53.01c.17.01.4-.06.62.48.25.6.85 2.07.92 2.22.08.15.13.32.03.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.07 1.31 2.36 1.46.29.15.46.12.63-.07.17-.2.73-.85.92-1.14.19-.29.39-.24.65-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.72-.18 1.42z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 10-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="10" r="2.5" fill="currentColor"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 018 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- Header -->
+<header class="top" id="top">
+  <div class="wrap">
+    <a href="#" class="logo" aria-label="Space Manager home"><img class="on-dark" src="img/logo.webp" alt="Space Manager — Architecture, Interiors, Turnkey" width="130" height="46"></a>
+    <div class="top-actions">
+      <a class="top-phone" data-tel href="#" aria-label="Call Space Manager"><svg width="18" height="18"><use href="#i-phone"/></svg><span data-phone-text>Call us</span></a>
+      <a href="#enquire" class="btn btn-primary" data-cta="header">Book Consultation</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg" role="img" aria-label="Living room interior designed by Space Manager"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Architecture · Interiors · Turnkey — Dehradun</span>
+      <h1>See your home <em>before</em> it's built.</h1>
+      <p class="hero-sub">Space Manager designs and delivers home interiors, villa elevations and offices — planned in photorealistic 3D, then executed by one coordinated team from first sketch to final handover.</p>
+      <ul class="ticks">
+        <li><svg><use href="#i-check"/></svg>Photorealistic 3D designs of every key room before work begins</li>
+        <li><svg><use href="#i-check"/></svg>One team for design, materials, vendors and site execution</li>
+        <li><svg><use href="#i-check"/></svg>Itemised scope and agreed milestones, so you always know what's next</li>
+      </ul>
+      <div class="hero-ctas">
+        <a href="#enquire-hero" class="btn btn-primary" data-cta="hero-mobile">Book Your Design Consultation</a>
+      </div>
+    </div>
+
+    <div class="form-card" id="enquire-hero">
+      <h2>Plan your space with us</h2>
+      <p class="form-intro">Share a few details. It takes 30 seconds.</p>
+      <form class="lead-form" data-form="hero" novalidate>
+        <div class="field"><label for="h-name">Your name</label><input id="h-name" name="name" autocomplete="name" placeholder="Full name" required><div class="err">Please enter your name</div></div>
+        <div class="field"><label for="h-phone">Phone / WhatsApp</label><div class="phone-wrap"><span>+91</span><input id="h-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit mobile number" maxlength="14" required></div><div class="err">Enter a valid 10-digit mobile number</div></div>
+        <div class="field"><label for="h-type">What are you planning?</label>
+          <select id="h-type" name="project_type" required>
+            <option value="">Select project type</option>
+            <option>Full home interiors</option>
+            <option>Modular kitchen</option>
+            <option>Bedroom / living room</option>
+            <option>House / villa elevation</option>
+            <option>Office or commercial space</option>
+            <option>Construction / turnkey project</option>
+            <option>Something else</option>
+          </select><div class="err">Please choose a project type</div></div>
+        <div class="field"><label for="h-loc">Project location</label><input id="h-loc" name="location" placeholder="e.g. Rajpur Road, Dehradun" required><div class="err">Please tell us where the project is</div></div>
+        <input class="hp" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Book Your Design Consultation <svg><use href="#i-arrow"/></svg></button>
+        <p class="form-note"><svg><use href="#i-lock"/></svg><span data-response-note>Our design team will call you back. No obligation.</span></p>
+      </form>
+      <div class="success" role="status" aria-live="polite">
+        <div class="tick"><svg width="30" height="30" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Thank you<span data-success-name></span>!</h3>
+        <p>We've received your details. A Space Manager designer will call you shortly to discuss your project.</p>
+        <a class="btn btn-wa" data-wa="lead" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Share photos on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="strip" aria-label="About Space Manager">
+  <div class="wrap">
+    <div class="stat"><b>Since 2021</b><span>Designing &amp; building in Doon</span></div>
+    <div class="stat"><b>15+</b><span>In-house design &amp; site team</span></div>
+    <div class="stat"><b>3-in-1</b><span>Architecture · Interiors · Turnkey</span></div>
+    <div class="stat"><b>3D first</b><span>Approve it before it's built</span></div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem">
+  <div class="wrap problem-grid">
+    <div class="rv">
+      <span class="eyebrow">Why home projects go wrong</span>
+      <h2 style="margin-top:14px">Most interiors don't fail at design. They fail between the drawing and the site.</h2>
+      <p class="lead">A designer here, a carpenter there, a contractor who has never seen the drawings. Decisions get made on site, materials change halfway, and the finished room looks nothing like the picture you fell in love with.</p>
+      <div class="pains">
+        <div class="pain"><div class="x">1</div><div><b>Too many vendors, no one accountable</b><span>You end up managing carpenters, electricians and suppliers yourself.</span></div></div>
+        <div class="pain"><div class="x">2</div><div><b>Guessing from a 2D drawing</b><span>It's hard to judge colours, lighting and proportions on paper.</span></div></div>
+        <div class="pain"><div class="x">3</div><div><b>Timelines and costs that keep moving</b><span>Without a fixed scope, every week brings a new "extra".</span></div></div>
+      </div>
+      <p class="answer"><strong>Space Manager closes that gap.</strong> The team that designs your space is the team that plans, coordinates and oversees its execution, against a scope you've approved.</p>
+    </div>
+    <div class="problem-img rv">
+      <img src="img/bed-1-sm.webp" srcset="img/bed-1-sm.webp 720w, img/bed-1.webp 1280w" sizes="(max-width:900px) 100vw, 560px" alt="Master bedroom 3D design by Space Manager" loading="lazy" width="720" height="405">
+      <div class="tag"><b>Designed, then delivered</b>Every room is visualised in 3D before execution starts.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">What we do</span>
+      <h2 style="margin-top:14px">One partner for every stage of your space.</h2>
+      <p>Bring us a bare flat, a plot or a tired office. We plan it, design it and coordinate the work until it's ready to use.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc rv"><img src="img/living-2-sm.webp" alt="Living room interior with TV wall" loading="lazy" width="720" height="436"><div class="svc-body"><h3>Home Interiors</h3><p>Homes, apartments and villas designed around how your family actually lives: storage, light, flow and finish.</p><div class="chips"><span>Living</span><span>Bedrooms</span><span>Kitchens</span><span>Wardrobes</span></div></div></article>
+      <article class="svc rv"><img src="img/kitchen-1-sm.webp" alt="Modular kitchen with breakfast counter" loading="lazy" width="720" height="525"><div class="svc-body"><h3>Turnkey Execution</h3><p>Space planning, furniture, lighting, materials and site management under one scope. You approve, we coordinate.</p><div class="chips"><span>Materials</span><span>Vendors</span><span>Site management</span></div></div></article>
+      <article class="svc rv"><img src="img/elev-2-sm.webp" alt="Modern house front elevation design" loading="lazy" width="720" height="720"><div class="svc-body"><h3>Architecture &amp; Elevations</h3><p>Facade and elevation design that gives your home a strong first impression and works with the plan behind it.</p><div class="chips"><span>Front elevation</span><span>Planning</span><span>Villas</span></div></div></article>
+      <article class="svc rv"><img src="img/office-1-sm.webp" alt="Office chamber interior design" loading="lazy" width="720" height="480"><div class="svc-body"><h3>Office &amp; Commercial</h3><p>Offices, chambers and business spaces planned around workflow, brand image and the people who use them.</p><div class="chips"><span>Offices</span><span>Chambers</span><span>Retail</span></div></div></article>
+    </div>
+    <p class="also rv">Also available: construction project management and landscape design. <a href="#enquire">Ask us about your project →</a></p>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Our design work</span>
+      <h2 style="margin-top:14px">Spaces designed by the Space Manager studio.</h2>
+      <p>Tap any image to view it full-screen.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Filter design work">
+      <button class="tab" role="tab" aria-selected="true" data-filter="all">All</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="living">Living rooms</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="bed">Bedrooms</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="kitchen">Kitchens &amp; dining</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="bath">Bathrooms</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="elev">Elevations</button>
+      <button class="tab" role="tab" aria-selected="false" data-filter="office">Offices</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <p class="g-note">Images shown are photorealistic 3D design visualisations prepared by the Space Manager team for client projects.</p>
+
+    <div class="mid-cta rv">
+      <p>Want a design like this <span>for your space?</span></p>
+      <a href="#enquire" class="btn btn-primary" data-cta="gallery">Get Your Design Consultation <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 3D -->
+<section class="section viz">
+  <div class="wrap viz-grid">
+    <div>
+      <div class="section-head rv" style="margin-bottom:34px">
+        <span class="eyebrow">The 3D advantage</span>
+        <h2 style="margin-top:14px">Approve every corner before a single wall is touched.</h2>
+        <p>Changing a design on screen costs nothing. Changing it on site costs time, money and patience. That's why every Space Manager project starts in 3D.</p>
+      </div>
+      <div class="viz-list">
+        <div class="viz-item rv"><div class="n">1</div><div><b>Walk through your space in 3D</b><span>See layouts, furniture, ceilings and lighting as they will actually look.</span></div></div>
+        <div class="viz-item rv"><div class="n">2</div><div><b>Try finishes before you buy them</b><span>Compare laminates, colours, stone and lighting moods side by side.</span></div></div>
+        <div class="viz-item rv"><div class="n">3</div><div><b>Build exactly what you approved</b><span>The final design becomes the reference for execution, so the site team and you are on the same page.</span></div></div>
+      </div>
+    </div>
+    <div class="viz-stack rv" aria-hidden="true">
+      <img src="img/living-7-sm.webp" alt="" loading="lazy" width="720" height="405">
+      <img src="img/bath-1-sm.webp" alt="" loading="lazy" width="720" height="780">
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">How it works</span>
+      <h2 style="margin-top:14px">From first call to handover, in five clear steps.</h2>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Consultation</h3><p>We understand your space, your routine, your budget range and your timeline, on call or at site.</p></div>
+      <div class="step rv"><h3>Concept &amp; 3D design</h3><p>Layouts, mood and photorealistic 3D views of key rooms. We refine until it feels right.</p></div>
+      <div class="step rv"><h3>Materials &amp; estimate</h3><p>Finishes, fittings and furniture finalised with an itemised scope, so decisions happen on paper, not on site.</p></div>
+      <div class="step rv"><h3>Execution</h3><p>Our team coordinates carpenters, vendors and site work against agreed milestones, with regular updates.</p></div>
+      <div class="step rv"><h3>Quality check &amp; handover</h3><p>Snag checks, finishing touches and a space handed over ready to live or work in.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS -->
+<section class="clients" aria-label="Clients">
+  <div class="wrap">
+    <span class="eyebrow">Schools, brands &amp; businesses we've worked with</span>
+    <div class="logos">
+      <img src="img/client-doonhills.webp" alt="Doon Hills Academy" loading="lazy">
+      <img src="img/client-sheffield.webp" alt="Sheffield School" loading="lazy">
+      <img src="img/client-swastik.webp" alt="Swastik Garden Resort" loading="lazy">
+      <img src="img/client-slmg.webp" alt="SLMG Beverages" loading="lazy">
+      <img src="img/client-spectrum.webp" alt="Spectrum Eduventures" loading="lazy">
+      <img src="img/client-jaggi.webp" alt="Sushant Jaggi &amp; Associates" loading="lazy">
+      <img src="img/client-glossy.webp" alt="Tozaindia.com" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head rv">
+      <span class="eyebrow">Why Space Manager</span>
+      <h2 style="margin-top:14px">The difference a coordinated team makes.</h2>
+    </div>
+    <table class="compare rv">
+      <thead><tr><th></th><th>The usual way</th><th class="us">With Space Manager</th></tr></thead>
+      <tbody>
+        <tr><td>Seeing the design</td><td class="them">2D drawings and reference photos</td><td class="us">Photorealistic 3D of your actual space</td></tr>
+        <tr><td>Vendors</td><td class="them">You find and manage each one</td><td class="us">One team coordinates design, vendors and site</td></tr>
+        <tr><td>Material decisions</td><td class="them">Made on site, under pressure</td><td class="us">Finalised on paper before execution</td></tr>
+        <tr><td>Accountability</td><td class="them">Split between many people</td><td class="us">A single point of contact for your project</td></tr>
+        <tr><td>Progress</td><td class="them">Chasing calls for updates</td><td class="us">Milestones agreed upfront and tracked</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background:var(--bg-2)" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="eyebrow">Questions</span>
+      <h2 style="margin-top:14px">Before you call us.</h2>
+      <p>Still unsure about something? Ask our team directly. We're happy to talk it through.</p>
+      <a class="btn btn-wa" data-wa="faq" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Chat on WhatsApp</a>
+    </div>
+    <div class="rv">
+      <details open><summary>Do you only design, or also execute the work?</summary><p>Both. You can work with us for design, or for design plus turnkey execution, where we coordinate materials, vendors and site work. We'll recommend the right scope after understanding your project.</p></details>
+      <details><summary>How much will my interiors cost?</summary><p>It depends on the area, scope and materials you choose. After the consultation we share an itemised estimate, so you can see exactly where the money goes before you commit.</p></details>
+      <details><summary>Will I see the design before work starts?</summary><p>Yes. Key spaces are designed in photorealistic 3D so you can review them and ask for changes before anything is built.</p></details>
+      <details><summary>How long does a project take?</summary><p>Timelines depend on the size and scope of the work. We agree a schedule with clear milestones before execution begins, so you know what happens when.</p></details>
+      <details><summary>Which areas do you work in?</summary><p>We're based in Dehradun. Share your project location in the form and our team will confirm how we can help.</p></details>
+      <details><summary>Do you handle offices and commercial spaces?</summary><p>Yes. We design and execute offices, chambers and business spaces, planned around workflow, brand image and the people who use them.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final" id="enquire">
+  <div class="final-bg" aria-hidden="true"></div>
+  <div class="wrap final-grid">
+    <div class="final-copy rv">
+      <span class="eyebrow">Start your project</span>
+      <h2 style="margin-top:14px">Let's plan your space properly, from day one.</h2>
+      <p>Tell us a little about your project. A Space Manager designer will call you to talk through your requirements, ideas and next steps.</p>
+      <div class="contact-lines">
+        <a data-tel href="#"><svg><use href="#i-phone"/></svg><span data-phone-text>Call us</span></a>
+        <a data-wa="contact" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp us</a>
+        <a data-mail href="#"><svg><use href="#i-mail"/></svg><span data-email-text></span></a>
+        <span style="display:inline-flex;gap:12px;align-items:center"><svg width="20" height="20" style="color:var(--copper-l)"><use href="#i-pin"/></svg><span data-address-text>Dehradun, Uttarakhand</span></span>
+      </div>
+    </div>
+
+    <div class="form-card rv">
+      <h2>Book your design consultation</h2>
+      <p class="form-intro">The more you share, the better prepared our designer will be.</p>
+      <form class="lead-form" data-form="final" novalidate>
+        <div class="row2">
+          <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" autocomplete="name" placeholder="Full name" required><div class="err">Please enter your name</div></div>
+          <div class="field"><label for="f-phone">Phone / WhatsApp</label><div class="phone-wrap"><span>+91</span><input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="10-digit number" maxlength="14" required></div><div class="err">Enter a valid 10-digit number</div></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-type">Project type</label>
+            <select id="f-type" name="project_type" required>
+              <option value="">Select</option>
+              <option>Full home interiors</option>
+              <option>Modular kitchen</option>
+              <option>Bedroom / living room</option>
+              <option>House / villa elevation</option>
+              <option>Office or commercial space</option>
+              <option>Construction / turnkey project</option>
+              <option>Something else</option>
+            </select><div class="err">Please choose one</div></div>
+          <div class="field"><label for="f-prop">Property</label>
+            <select id="f-prop" name="property_type">
+              <option value="">Select</option>
+              <option>Apartment / flat</option>
+              <option>Independent house</option>
+              <option>Villa</option>
+              <option>Plot (new construction)</option>
+              <option>Office / commercial</option>
+            </select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-loc">Project location</label><input id="f-loc" name="location" placeholder="Area, city" required><div class="err">Please add a location</div></div>
+          <div class="field"><label for="f-time">When do you want to start?</label>
+            <select id="f-time" name="timeline">
+              <option value="">Select</option>
+              <option>Immediately</option>
+              <option>Within 1–3 months</option>
+              <option>In 3–6 months</option>
+              <option>Just exploring</option>
+            </select></div>
+        </div>
+        <div class="field"><label for="f-msg">Tell us about your project <span style="color:var(--muted);font-weight:400">(optional)</span></label><textarea id="f-msg" name="message" placeholder="e.g. 3BHK in Sahastradhara Road, need full interiors with modular kitchen"></textarea></div>
+        <input class="hp" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Book Your Design Consultation <svg><use href="#i-arrow"/></svg></button>
+        <p class="form-note"><svg><use href="#i-lock"/></svg>We only use your details to contact you about your project.</p>
+      </form>
+      <div class="success" role="status" aria-live="polite">
+        <div class="tick"><svg width="30" height="30" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Thank you<span data-success-name></span>!</h3>
+        <p>We've received your details. A Space Manager designer will call you shortly to discuss your project.</p>
+        <a class="btn btn-wa" data-wa="lead" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Share photos on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="img/logo-full.webp" alt="Space Manager" width="160" height="64">
+        <p>A design-and-execution studio for homes, villas and workspaces in Dehradun. Architecture | Interiors | Turnkey.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a data-tel href="#"><span data-phone-text>Call us</span></a>
+        <a data-wa="footer" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a data-mail href="#"><span data-email-text></span></a>
+        <span data-address-text>Dehradun, Uttarakhand</span>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#services">Services</a>
+        <a href="#work">Design work</a>
+        <a href="#process">How it works</a>
+        <a data-ig href="#" target="_blank" rel="noopener">Instagram @spacemanager.sm</a>
+      </div>
+    </div>
+    <div class="legal"><span>© <span id="yr">2026</span> Space Manager. All rights reserved.</span><span>Design visuals are 3D renders; final execution may vary with site conditions and selected materials.</span></div>
+  </div>
+</footer>
+
+<a class="fab-wa" data-wa="float" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<nav class="mbar" id="mbar" aria-label="Quick contact">
+  <a class="m-call" data-tel href="#"><svg><use href="#i-phone"/></svg>Call</a>
+  <a class="m-wa" data-wa="mbar" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+  <a class="m-cta" href="#enquire" data-cta="mbar">Book Consultation</a>
+</nav>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <img id="lb-img" alt="">
+  <p class="lb-cap" id="lb-cap"></p>
+  <button class="lb-btn lb-close" data-lb="close" aria-label="Close">✕</button>
+  <button class="lb-btn lb-prev" data-lb="prev" aria-label="Previous image">‹</button>
+  <button class="lb-btn lb-next" data-lb="next" aria-label="Next image">›</button>
+</dialog>
+
+<script>
+(function(){
+  var C = window.SM_CONFIG || {};
+  var $ = function(s,r){return (r||document).querySelector(s)}, $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+
+  /* ---------- Contact wiring ---------- */
+  var waBase = "https://wa.me/" + (C.whatsapp||"");
+  var waMsg = {
+    default: "Hi Space Manager, I'd like to discuss an interior / design project.",
+    lead: "Hi Space Manager, I just submitted an enquiry on your website. Sharing photos/floor plan of my space."
+  };
+  $$("[data-tel]").forEach(function(a){ a.href = "tel:" + (C.phone||""); a.addEventListener("click",function(){track("Contact",{method:"call"})}); });
+  $$("[data-wa]").forEach(function(a){
+    var k = a.getAttribute("data-wa");
+    a.href = waBase + "?text=" + encodeURIComponent(k==="lead"?waMsg.lead:waMsg.default);
+    a.addEventListener("click",function(){track("Contact",{method:"whatsapp",placement:k})});
+  });
+  $$("[data-mail]").forEach(function(a){ a.href = "mailto:" + (C.email||""); });
+  $$("[data-phone-text]").forEach(function(e){ if(C.phoneDisplay) e.textContent = C.phoneDisplay; });
+  $$("[data-email-text]").forEach(function(e){ e.textContent = C.email||""; });
+  $$("[data-address-text]").forEach(function(e){ if(C.address) e.textContent = C.address; });
+  $$("[data-ig]").forEach(function(a){ a.href = C.instagram||"#"; });
+  $$("[data-response-note]").forEach(function(e){ if(C.responseNote) e.textContent = C.responseNote; });
+  $("#yr").textContent = new Date().getFullYear();
+
+  /* ---------- Tracking (only if IDs configured) ---------- */
+  if (C.metaPixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', C.metaPixelId); fbq('track','PageView');
+  }
+  if (C.ga4Id) {
+    var g=document.createElement("script"); g.async=true; g.src="https://www.googletagmanager.com/gtag/js?id="+C.ga4Id; document.head.appendChild(g);
+    window.dataLayer=window.dataLayer||[]; window.gtag=function(){dataLayer.push(arguments)}; gtag("js",new Date()); gtag("config",C.ga4Id);
+  }
+  function track(ev,data){
+    try{ if(window.fbq){ ev==="Lead" ? fbq("track","Lead",data) : fbq("trackCustom",ev,data); } }catch(e){}
+    try{ if(window.gtag){ gtag("event", ev==="Lead"?"generate_lead":"contact_click", data); } }catch(e){}
+  }
+
+  /* ---------- UTM capture ---------- */
+  var params = new URLSearchParams(location.search);
+  var attr = {};
+  ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid"].forEach(function(k){
+    var v = params.get(k);
+    try{ if(v){ sessionStorage.setItem("sm_"+k,v); } else { v = sessionStorage.getItem("sm_"+k); } }catch(e){}
+    if(v) attr[k]=v;
+  });
+
+  /* ---------- Forms ---------- */
+  function cleanPhone(v){ v=(v||"").replace(/\D/g,""); if(v.length>10 && v.indexOf("91")===0) v=v.slice(2); if(v.length===11 && v[0]==="0") v=v.slice(1); return v; }
+  $$(".lead-form").forEach(function(form){
+    var card = form.closest(".form-card");
+    form.addEventListener("input",function(e){ var f=e.target.closest(".field"); if(f) f.classList.remove("invalid"); });
+    form.addEventListener("submit",function(e){
+      e.preventDefault();
+      if (form.company_website.value) return; // bot
+      var ok = true, first = null;
+      $$("[required]",form).forEach(function(el){
+        var bad = !el.value.trim();
+        if (el.name==="phone") bad = !/^[6-9]\d{9}$/.test(cleanPhone(el.value));
+        el.closest(".field").classList.toggle("invalid",bad);
+        if(bad){ ok=false; first = first||el; }
+      });
+      if(!ok){ first.focus(); return; }
+
+      var data = {};
+      new FormData(form).forEach(function(v,k){ if(k!=="company_website") data[k]=String(v).trim(); });
+      data.phone = "+91" + cleanPhone(data.phone);
+      data.form = form.getAttribute("data-form");
+      data.page = location.href.split("?")[0];
+      data.submitted_at = new Date().toLocaleString("en-IN",{timeZone:"Asia/Kolkata"});
+      for (var k in attr) data[k]=attr[k];
+
+      var btn = form.querySelector("button[type=submit]"); var label = btn.innerHTML;
+      btn.disabled = true; btn.textContent = "Sending…";
+
+      var done = function(){
+        track("Lead",{content_name:data.project_type, content_category:data.form});
+        var first = (data.name||"").split(" ")[0];
+        $$("[data-success-name]",card).forEach(function(s){ s.textContent = first ? ", "+first : ""; });
+        var wa = card.querySelector("[data-wa=lead]");
+        if (wa) wa.href = waBase + "?text=" + encodeURIComponent("Hi Space Manager, I'm "+data.name+". I just enquired on your website about: "+data.project_type+" ("+data.location+"). Sharing photos/floor plan of my space.");
+        card.classList.add("done");
+        card.scrollIntoView({behavior:"smooth",block:"center"});
+      };
+
+      if (!C.formEndpoint) { console.warn("[Space Manager] formEndpoint is empty in config.js — lead NOT saved:", data); setTimeout(done,500); return; }
+      fetch(C.formEndpoint,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(data).toString()})
+        .then(done)
+        .catch(function(){
+          btn.disabled=false; btn.innerHTML=label;
+          alert("Sorry, something went wrong. Please try again, or message us on WhatsApp.");
+        });
+    });
+  });
+
+  /* ---------- Gallery ---------- */
+  var items = [
+    ["living-1","living","Living room"],["bed-2","bed","Bedroom"],["kitchen-1","kitchen","Kitchen & breakfast counter"],["elev-1","elev","Villa elevation"],
+    ["living-2","living","TV wall & lounge"],["bath-1","bath","Bathroom"],["living-3","living","Living room"],["kitchen-2","kitchen","Modular kitchen"],
+    ["office-1","office","Advocate's chamber"],["elev-3","elev","Contemporary elevation"],["bed-1","bed","Master bedroom"],["kitchen-3","kitchen","Kitchen"],
+    ["living-4","living","Drawing room"],["elev-4","elev","Townhouse elevation"],["bed-4","bed","Bedroom"],["living-5","living","Family lounge"],
+    ["kitchen-4","kitchen","Modular kitchen"],["bath-2","bath","Vanity"],["elev-5","elev","Classic villa elevation"],["bed-3","bed","Master bedroom"],
+    ["living-6","living","Living room"],["kitchen-5","kitchen","Dining & kitchen"],["office-2","office","Office cabin"],["elev-6","elev","Villa elevation"],
+    ["bed-5","bed","Bedroom"],["living-7","living","Living & partition"],["kitchen-6","kitchen","Kitchen & bar counter"],["elev-2","elev","Modern elevation"],
+    ["bed-6","bed","Bedroom"],["living-8","living","Formal living"],["kitchen-7","kitchen","Kitchen"],["elev-7","elev","Bungalow elevation"],
+    ["bath-3","bath","Shower area"],["living-9","living","Lounge"],["elev-8","elev","Contemporary elevation"],["bed-7","bed","Bedroom"],
+    ["kitchen-8","kitchen","Kitchen"],["office-3","office","Chamber"],["elev-9","elev","Elevation"],["elev-10","elev","Villa elevation"],
+    ["kitchen-9","kitchen","Utility & storage"],["elev-11","elev","Elevation"],["elev-12","elev","Elevation"]
+  ];
+  var grid = $("#gallery"), visible = [], filter = "all", limitAll = 12;
+  function render(){
+    var list = items.filter(function(i){ return filter==="all" || i[1]===filter; });
+    var extra = filter==="all" && list.length>limitAll;
+    if (filter==="all") list = list.slice(0,limitAll);
+    visible = list;
+    grid.innerHTML = list.map(function(it,idx){
+      return '<button type="button" data-i="'+idx+'" aria-label="View '+it[2]+'"><img src="img/'+it[0]+'-sm.webp" alt="'+it[2]+' — 3D design by Space Manager" loading="lazy" width="720" height="540"><span class="cap">'+it[2]+'</span></button>';
+    }).join("");
+    $("#more-btn") && $("#more-btn").remove();
+    if (extra){
+      var b=document.createElement("div"); b.id="more-btn"; b.style.cssText="text-align:center;margin-top:22px";
+      b.innerHTML='<button class="btn btn-ghost" type="button">View all '+items.length+' designs</button>';
+      b.firstChild.onclick=function(){ limitAll=999; render(); };
+      grid.after(b);
+    }
+  }
+  $$(".tab").forEach(function(t){ t.addEventListener("click",function(){
+    $$(".tab").forEach(function(x){x.setAttribute("aria-selected","false")}); t.setAttribute("aria-selected","true");
+    filter = t.getAttribute("data-filter"); render();
+  });});
+  render();
+
+  /* ---------- Lightbox ---------- */
+  var lb = $("#lb"), lbImg = $("#lb-img"), lbCap = $("#lb-cap"), cur = 0;
+  function show(i){ cur=(i+visible.length)%visible.length; var it=visible[cur]; lbImg.src="img/"+it[0]+".webp"; lbImg.alt=it[2]; lbCap.textContent=it[2]+"  ·  "+(cur+1)+" / "+visible.length; }
+  grid.addEventListener("click",function(e){ var b=e.target.closest("button[data-i]"); if(!b) return; show(+b.getAttribute("data-i")); if(lb.showModal) lb.showModal(); else lb.setAttribute("open",""); });
+  lb.addEventListener("click",function(e){
+    var a = e.target.getAttribute && e.target.getAttribute("data-lb");
+    if(a==="close"||e.target===lb) lb.close(); else if(a==="prev") show(cur-1); else if(a==="next") show(cur+1);
+  });
+  document.addEventListener("keydown",function(e){ if(!lb.open) return; if(e.key==="ArrowLeft") show(cur-1); if(e.key==="ArrowRight") show(cur+1); });
+  var tx=0; lb.addEventListener("touchstart",function(e){tx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-tx; if(Math.abs(d)>50) show(cur+(d<0?1:-1));},{passive:true});
+
+  /* ---------- Header / mobile bar / reveal ---------- */
+  var top = $("#top"), mbar = $("#mbar"), heroH = $("#hero").offsetHeight;
+  function onScroll(){ var y=window.scrollY; top.classList.toggle("scrolled", y>40); mbar.classList.toggle("show", y>heroH*0.6); }
+  window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+  $$("[data-cta]").forEach(function(a){ a.addEventListener("click",function(){ track("CTA_Click",{placement:a.getAttribute("data-cta")}); }); });
+  if ("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target);} }); },{rootMargin:"0px 0px -8% 0px"});
+    $$(".rv").forEach(function(el){ io.observe(el); });
+  } else { $$(".rv").forEach(function(el){ el.classList.add("in"); }); }
+})();
+</script>
+</body>
+</html>
